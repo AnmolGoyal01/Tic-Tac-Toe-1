@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #f2e8cf;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    scale: 1;
+}
+
+.game{
+    height: 75vmin;
+    width: 75vmin;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    padding: 2vmin;
+    column-gap: 2vmin;
+    row-gap: 2vmin;
+    border-radius: 5vmin;
+}
+
+.game button{
+    background-color: #bc4749;
+    color: #f2e8cf;
+    border-radius: 4vmin;
+    border: none;
+    box-shadow: 0.9vmin 1.2vmin #210d0d;
+
+    height: 21vmin;
+    width: 21vmin;
+
+    font-size: 9vmin;
+    font-weight: 400;
+    justify-content: center;
+}
+
+
+
+.reset {
+    padding: 2vmin 9vmin;
+    font-size: 6vmin;
+    background-color: white;
+
+    position: relative;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 3vmin;
+    border: 0.01px solid #1f0b0b;
+    box-shadow: 1vmin .8vmin #1f0b0b;
+}
+
+.winner{
+    background-color: #bc4749;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.winnerBox {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8vmin;
+}
+
+.hidden {
+    display: none;
+}
+
+.winnerMsg{
+    font-size: 15vmin;
+    text-align: center;
+}
+
+
+.newGame {
+    padding: 2vmin 4vmin;
+    font-size: 7vmin;
+    border-radius: 3vmin;
+    border: none;
+    box-shadow: 1vmin 1vmin #1f0b0b;
+    color: #1f0b0b;
+}
+
+
+
+
+.scale {
+    scale : 2;
+}
